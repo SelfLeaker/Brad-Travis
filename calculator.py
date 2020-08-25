@@ -8,7 +8,7 @@ class Calculator(object):
 
 	def add(self):
 
-		return self.n1 + self.n2
+		return self.n1 + self.n2 + 1
 
 	def subtract(self):
 
