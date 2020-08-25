@@ -1,5 +1,5 @@
 
-import sys; sys.path.insert(0, "../")
+import sys; from os.path import dirname, abspath; sys.path.append(dirname(dirname(abspath(__file__))))
 from calculator import Calculator
 
 def test_add():
@@ -8,7 +8,7 @@ def test_add():
 
 	calc = Calculator(n1, n2)
 
-	assert calc.add() == n1 - n2, "The method 'add' returned a different value!"
+	assert calc.add() == n1 + n2, "The method 'add' returned a different value!"
 
 
 def test_sub():
