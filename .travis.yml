@@ -1,20 +1,16 @@
+---
+
 language: python
 
 python:
-	
-	- 3.8.2
+  - 3.8.2
 
 script:
-	
-	- pytest
+  - pytest
 
 notifications:
-	
-	email:
-		
-		recipients:
-			- thiagoalexsanderluiz@gmail.com
-
-		on_success: never
-
-		on_failure: always
+  email:
+    recipients:
+      - thiagoalexsanderluiz@gmail.com
+    on_success: never
+    on_failure: always
